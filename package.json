@@ -1,0 +1,23 @@
+{
+  "name": "animefinder",
+  "version": "1.0.0",
+  "description": "An app to find great anime.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlockhart/AnimeFinder.git"
+  },
+  "author": "Tony Lockhart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlockhart/AnimeFinder/issues"
+  },
+  "homepage": "https://github.com/tlockhart/AnimeFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
