@@ -57,26 +57,45 @@ var apiRoutes = function (app) {
         //var question1 = newreservation.survey[0];
         //console.log("First Question Entered = "+question1);
 
-        console.log("Firste Anser = "+newreservation.scores[0]);
+        console.log("First Answer = "+newreservation.scores[0]);
         console.log(newreservation);
         console.log(reservations);
         /**************************************************
-         * 11/08: DO SOMETHING WITH THE DAT TO COMPARE IT: NOT BY ROUTE NAME BY Q1
+         * 11/08: DO SOMETHING WITH THE DATA TO COMPARE IT: NOT BY ROUTE NAME BY Q1
          **************************************************/
+        
+        var diffSumTemp = 100;//Must start greater than question value
+        var chosenRecord = 0;
         for (var i = 0; i < reservations.length; i++) {
-            if (newreservation.scores[0] === reservations[i].scores[0]) {
-                return res.json(reservations[i]);
-            }
-        }
-        /************************************************************************/
+            var diffSum = 0;
+            var diffArr = new Array(newreservation.length);
+            for (var j = 0; j < reservations[i].scores.length; j++){
+                var questionDif = Math.abs(newreservation.scores[j]-reservations[i].scores[j]);
+                diffArr.push(questionDif);
+                diffSum = diffSum + questionDif;
+                console.log("Reservations Q"+j+" = "+reservations[i].scores[j]);
+            }//for
+            if (diffSum < diffSumTemp){
+                diffSumTemp = diffSum; //Update Temp to current diffSum
+                chosenRecord = i;
+            }//if
+            console.log("Question DIFF = "+diffArr+" DiffSUM = "+diffSum+" ChosenRecord = "+chosenRecord);
+            console.log("*********************************************");
+        }//for
 
-        //Populate the PERSONS array
+        /*****************************
+         *Populate the PERSONS array
+         *****************************/
         tables.push(newreservation);
 
         /************************************************************************
          * 11/08: SEND THE REPONSE AS THE RESERVATION THAT MATCHES THE CRITERIA
          ************************************************************************/
-        res.json(newreservation);
+       // res.json(newreservation);
+            return res.json(reservations[chosenRecord]);
+        /************************************************************************/
+
+        
         /************************************************************************/
 
     }); //New Reservations
