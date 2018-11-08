@@ -9,9 +9,14 @@ var htmlRoutes = function (app) {
         res.sendFile(path.join(__dirname, "../public/home.html"));
     });
 
-    //browser: localhost:3000/survey
-    app.get("/survey", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/survey.html"));
+    //browser: localhost:3000/form
+    app.get("/form", function (req, res) {
+        res.sendFile(path.join(__dirname, "../public/reserve.html"));
+    });
+
+    //browser: localhost:3000/view
+    app.get("/view", function (req, res) {
+        res.sendFile(path.join(__dirname, "../public/reservations.html"));
     });
 };
 
