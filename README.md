@@ -1,7 +1,7 @@
 # AnimeFinder
 This project recommends the most compatible anime series, based upon the user's interests.  The app consists of a survey that receives information about the user's favorite genres and their personality.  The app stores the user information as a nonpersistent JSON object.  The app then searches the list of anime shows, and returns the best show based on this input.  
 # Demo
-![Bamazon Demo](./images/bamazon_demo.gif)<br/>
+*https://vast-tor-39272.herokuapp.com/<br/>
 # Setup
 In order to run the app, you will need to clone this repository and install all required technologies listed below.
 # Required Technologies
