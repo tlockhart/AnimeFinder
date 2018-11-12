@@ -8,10 +8,10 @@ In order to run the app, you will need to clone this repository and install all 
 1. [Node.js LTS](https://nodejs.org/en/)<br/>
 2. [NPM](https://www.npmjs.com/get-npm)<br/>
 3. [Git & Git Bash](https://git-scm.com/downloads)<br/>
-4. [MySQL 5.7.24](https://dev.mysql.com/downloads/installer/)<br/>
 # NPM Modules Used
 1. express
 2. path
+3. chosen-js
 # Installation Steps
 1. Open Bash and Clone the AnimeFinder repo
 2. Install all required technologies
