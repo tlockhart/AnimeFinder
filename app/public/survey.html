@@ -322,7 +322,7 @@
 
           if ($(this).val() === "") {
             isValid = false;
-            console.log("FORM NOT COMPLETE!")
+            //console.log("FORM NOT COMPLETE!")
           }
         });
         return isValid;
@@ -330,7 +330,7 @@
 
       // If all required fields are filled then store the data
       if (validateForm()) {
-        console.log("**FORM IS COMPLETE");
+        //console.log("**FORM IS COMPLETE");
         // Create an object for the user"s data
         var userData = {
           name: $("#name").val(),
