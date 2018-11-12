@@ -1,7 +1,7 @@
 //Require stmts
 // =============================================================
 var express = require("express");
-var path = require("path");
+var path = require("path"); //Part of nodeJS
 
 // Setup the Express App Reference
 // =============================================================

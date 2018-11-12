@@ -11,7 +11,6 @@ In order to run the app, you will need to clone this repository and install all 
 # NPM Modules Used
 1. express
 2. path
-3. chosen-js
 # Installation Steps
 1. Open Bash and Clone the AnimeFinder repo
 2. Install all required technologies
