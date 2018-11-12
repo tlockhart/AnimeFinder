@@ -1,15 +1,6 @@
-/*var reservations = [
-    {
-        name: 'Tony Lockhart',
-        phone: '6789935340',
-        email: 'tony.lockhart@ymail.com',
-        id: '1',
-        routeName: 'tonylockhart'
-    }
-];*/
 // Animes (DATA)
 // =============================================================
-var reservations = [
+var animes = [
     {
         "name": "Attack on Titan",
         "photo": "https://myanimelist.cdn-dena.com/images/anime/10/47347l.jpg",
@@ -25,7 +16,8 @@ var reservations = [
             "4",
             "3",
             "4"
-        ]
+        ],
+        "animeRouteName": "attackontitan"
     },
     {
         "name": "Sword Art Online",
@@ -42,24 +34,26 @@ var reservations = [
             "4",
             "4",
             "1"
-        ]
+        ],
+        "animeRouteName": "swordartonline"
     },
     {
         "name": "Terra Formars",
         "photo": "https://myanimelist.cdn-dena.com/images/anime/2/67117l.jpg",
         "scores": [
             "1",
-            "5",
+            "4",
             "5",
             "1",
             "1",
             "4",
-            "5",
+            "4",
             "1",
             "3",
             "4",
             "1"
-        ]
+        ],
+        "animeRouteName": "terraformars"
     },
     {
         "name": "Kill la Kill",
@@ -76,7 +70,8 @@ var reservations = [
             "1",
             "4",
             "1"
-        ]
+        ],
+        "animeRouteName": "killlakill"
     },
     {
         "name": "Hunter X Hunter",
@@ -93,7 +88,8 @@ var reservations = [
             "5",
             "4",
             "4"
-        ]
+        ],
+        "animeRouteName": "hunterxhunter"
     },
     {
         "name": "Magi: The Kingdom of Magic",
@@ -107,10 +103,11 @@ var reservations = [
             "2",
             "1",
             "2",
-            "5",
-            "5",
+            "4",
+            "4",
             "4"
-        ]
+        ],
+        "animeRouteName": "magithekingdomofmagic"
     },
     {
         "name": "Fairy Tail",
@@ -124,10 +121,11 @@ var reservations = [
             "3",
             "1",
             "1",
-            "5",
+            "4",
             "3",
             "4"
-        ]
+        ],
+        "animeRouteName": "fairytail"
     },
     {
         "name": "Gintama",
@@ -144,7 +142,8 @@ var reservations = [
             "2",
             "3",
             "1"
-        ]
+        ],
+        "animeRouteName": "gintama"
     },
     {
         "name": "Erased",
@@ -161,7 +160,8 @@ var reservations = [
             "2",
             "2",
             "3"
-        ]
+        ],
+        "animeRouteName": "erased"
     },
     {
         "name": "Inuyashiki",
@@ -178,7 +178,8 @@ var reservations = [
             "1",
             "3",
             "3"
-        ]
+        ],
+        "animeRouteName": "inuyashiki"
     },
     {
         "name": "No Game No Life",
@@ -195,7 +196,8 @@ var reservations = [
             "4",
             "5",
             "4"
-        ]
+        ],
+        "animeRouteName": "nogamenolife"
     },
     {
         "name": "Mirrai Nikki",
@@ -207,14 +209,15 @@ var reservations = [
             "1",
             "3",
             "4",
-            "5",
+            "4",
             "5",
             "1",
             "3",
             "4"
-        ]
+        ],
+        "animeRouteName": "mirrainikki"
     }
 ]
 
 
-module.exports = reservations;
+module.exports = animes;
