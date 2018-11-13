@@ -14,7 +14,7 @@ In order to run the app, you will need to clone this repository and install all 
 1. Open Bash and Clone the AnimeFinder repo
 2. Install all required technologies
 3. In Bash, change the current directory to the AnimeFinder directory and install all modules from the package.json, using the following command:
-    1. install i [Enter]  
+    1. npm i [Enter]  
 # Execute Program
 1. In Bash, enter the following command in the AnimeFinder directory, to start the server.
     1. node server.js [ENTER]
