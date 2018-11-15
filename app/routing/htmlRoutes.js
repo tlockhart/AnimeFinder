@@ -12,15 +12,6 @@ var htmlRoutes = function (app) {
     app.get("/form", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
-
-    //browser: localhost:3000/images
-    app.get("/images", function (req, res) {
-        //res.sendFile(path.join(__dirname, "../public/images/animeicon_inverted.png"));
-        res.sendFile(path.join(__dirname, "../public/images/animeicon_white.png"));
-    });
-    app.get("/banner", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/images/banner3.png"));
-    });
 };
 
 module.exports = htmlRoutes;

@@ -11,8 +11,21 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 // Setup the Express app middleware to handle data parsing
+//Used to process stream data in formatted form (extended true: convert nested and unnested data)
+//Must be placed before routes
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+//render all static files (images) in html files in the public folder
+//Must be placed before routes
+//Option1: app.use(express.static("./app/public"));
+
+//Option2: process.cwd//current working directory
+//__dirname//dir where your storing script
+//Option3: app.use(express.static(__dirname + "./app/public"));//NOt dependent on file structure in relative path
+
+//Option4: Works for any operating systems regardless of slash convention
+app.use(express.static(path.join(__dirname, "app", "public")));
 
 //SETUP REFERENCES TO DATA ROUTES
 /*******************************************************************/
