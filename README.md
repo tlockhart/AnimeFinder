@@ -1,4 +1,6 @@
-# AnimeFinder
+<h1 align="center">AnimeFinder</h1>
+<p align="center"><kbd><img src ="app/public/images/AnimeFinder.png" /></kbd></p><br/>
+
 This project recommends the most compatible anime series, based upon the user's interests.  The app consists of a survey that receives information about the user's favorite genres and their personality.  The app stores the user information as a nonpersistent JSON object.  The app then searches the list of anime shows, and returns the best show based on this input.  
 # Demo
 *https://vast-tor-39272.herokuapp.com/<br/>
