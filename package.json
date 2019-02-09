@@ -4,6 +4,8 @@
   "description": "An app to find great anime.",
   "main": "server.js",
   "scripts": {
+    "lint": "eslint ./",
+    "lint:fix": "eslint --fix ./",
     "test": "node server.js",
     "start": "node server.js"
   },
@@ -19,5 +21,10 @@
   "homepage": "https://github.com/tlockhart/AnimeFinder#readme",
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
   }
 }

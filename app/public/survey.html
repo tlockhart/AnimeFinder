@@ -360,9 +360,9 @@
         };
 
         /*********************************************************************************************
-         * 11/08: WHENEVER A POST METHOD IS RECEIVED FROM THIS ROUTE, PASS IN userDATA as the request 
-         * and the function as the response.  The actual post method is handled in apiRoutes.js and will 
-         * return the response as a "data" object (that matches the crtieria in the apiRoutes) to be manipulated.
+         * 11/08: WHENEVER A POST METHOD IS RECEIVED FROM THIS ROUTE, PASS IN userDATA and a callback 
+         * function.  The actual post method is handled in apiRoutes.js and will return the response 
+         * as a "data" object (that matches the crtieria in the apiRoutes) to be manipulated.
          * *******************************************************************************************/
         $.post("/api/animes", userData, function(data) {
 
