@@ -1,7 +1,7 @@
 const animes = require('../data/animes');
 const surveys = require('../data/surveys');
 
-const apiRoutes = function (app) {
+const apiRoutes = (app) => {
   // Setup Routes to all animes: Don't Push Anything HERE
   // ***************************************************
 
